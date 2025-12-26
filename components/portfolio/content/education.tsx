@@ -35,19 +35,6 @@ export function EducationContent() {
         </div>
       </div>
 
-      {/* Languages Section */}
-      <div className="bg-[#252526] rounded-lg p-6 border border-[#3c3c3c]">
-        <h2 className="text-lg font-semibold text-[#4ec9b0] mb-4">
-          <span className="text-[#569cd6]">{"// "}</span>
-          Languages
-        </h2>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
-            <span className="text-[#d4d4d4]">English</span>
-            <span className="px-2 py-0.5 bg-[#007acc] rounded text-xs text-white">Advanced</span>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
