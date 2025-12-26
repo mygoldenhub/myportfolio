@@ -154,7 +154,7 @@ const lukasKnowledge = {
     },
     {
       role: "Full Stack Developer",
-      company: "Siemens",
+      company: "SupraTix GmbH",
       location: "Germany",
       period: "2019 - 2020",
       highlights: [
@@ -175,7 +175,7 @@ const greetingResponses = [
   `Hi there! Great to meet you. I can tell you all about Lukas Jam - his 7+ years of experience, his AI & automation expertise, projects, education, and more. What interests you?`,
   `Welcome! I'm here to help you learn about Lukas. He's a Full Stack AI Automation Developer with expertise in AI agents, LLMs, and workflow orchestration. Ask me anything!`,
   `Hey! I'd be happy to share information about Lukas Jam. I know about his work history, technical skills, education at Technical University of Berlin, and current projects. What would you like to explore?`,
-  `Greetings! I'm Lukas's virtual assistant. I can discuss his experience at companies like Gain Energy, Butterflies.AI, Klarna, and Siemens, or his skills in AI, automation, and full-stack development. What's on your mind?`,
+  `Greetings! I'm Lukas's virtual assistant. I can discuss his experience at companies like Gain Energy, Butterflies.AI, Klarna, and SupraTix GmbH, or his skills in AI, automation, and full-stack development. What's on your mind?`,
 ]
 
 function generateResponse(query: string): string {
@@ -285,7 +285,7 @@ function generateResponse(query: string): string {
     return `**${exp.role} at ${exp.company}** (${exp.period})\n📍 ${exp.location}\n\n${exp.highlights.map((h) => `• ${h}`).join("\n")}`
   }
 
-  if (q.match(/siemens/)) {
+  if (q.match(/SupraTix GmbH/)) {
     const exp = lukasKnowledge.workExperience[5]
     return `**${exp.role} at ${exp.company}** (${exp.period})\n📍 ${exp.location}\n\n${exp.highlights.map((h) => `• ${h}`).join("\n")}`
   }
@@ -305,7 +305,7 @@ function generateResponse(query: string): string {
 
   // Location
   if (q.match(/where|location|based|country|live|from|remote/)) {
-    return `Lukas is based in **${lukasKnowledge.location}**. He has worked remotely with clients and companies across:\n\n🇺🇸 United States (Gain Energy, Butterflies.AI)\n🇦🇺 Australia (Freedom Property Investors, Human Pixel)\n🇸🇪 Sweden (Klarna AB)\n🇩🇪 Germany (Siemens, currently based)\n\nHe's available for remote opportunities worldwide!`
+    return `Lukas is based in **${lukasKnowledge.location}**. He has worked remotely with clients and companies across:\n\n🇺🇸 United States (Gain Energy, Butterflies.AI)\n🇦🇺 Australia (Freedom Property Investors, Human Pixel)\n🇸🇪 Sweden (Klarna AB)\n🇩🇪 Germany (SupraTix GmbH, currently based)\n\nHe's available for remote opportunities worldwide!`
   }
 
   // Availability
@@ -349,7 +349,7 @@ function generateResponse(query: string): string {
 
   // Default response - varied
   const defaultResponses = [
-    `I can help you learn about Lukas Jam, a ${lukasKnowledge.title} with ${lukasKnowledge.experience} of experience.\n\nI can tell you about:\n• His **skills** (AI, automation, frontend, backend, cloud)\n• His **work experience** (Gain Energy, Butterflies.AI, Klarna, Siemens, etc.)\n• His **education** (Technical University of Berlin)\n• His **projects** and accomplishments\n• How to **contact** him\n\nWhat would you like to know?`,
+    `I can help you learn about Lukas Jam, a ${lukasKnowledge.title} with ${lukasKnowledge.experience} of experience.\n\nI can tell you about:\n• His **skills** (AI, automation, frontend, backend, cloud)\n• His **work experience** (Gain Energy, Butterflies.AI, Klarna, SupraTix GmbH, etc.)\n• His **education** (Technical University of Berlin)\n• His **projects** and accomplishments\n• How to **contact** him\n\nWhat would you like to know?`,
     `I'm knowledgeable about Lukas's entire background! Try asking about:\n\n🤖 **AI & Automation** - LLMs, RAG, n8n, Zapier\n💼 **Experience** - Companies he's worked with\n🎓 **Education** - University, degree, focus areas\n🛠️ **Skills** - Full technical stack\n📧 **Contact** - How to reach him\n\nWhat interests you most?`,
     `I have comprehensive information about Lukas! Some topics I can discuss:\n\n• His role as a **${lukasKnowledge.title}**\n• **${lukasKnowledge.experience}** of professional experience\n• Work at companies like **Gain Energy**, **Butterflies.AI**, **Klarna**\n• Education at **${lukasKnowledge.education.university}**\n• Technical skills in AI, automation, and full-stack development\n\nWhat would you like to explore?`,
   ]

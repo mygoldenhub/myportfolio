@@ -38,7 +38,7 @@ Full Stack AI Developer specializing in AI Agents, Automation, SaaS, and CRM Sys
    - Vue.js, chart.js, D3 visualization dashboards
    - Automatic voice call center with Twilio and NLP
 
-6. **Siemens (2019-2020) - Full Stack Developer** (Germany)
+6. **SupraTix GmbH (2019-2020) - Full Stack Developer** (Germany)
    - Front and back end development
    - HTML/CSS, Bootstrap, JavaScript, jQuery
    - Interactive websites and animations

@@ -66,7 +66,7 @@ export function ExperienceContent() {
     {
       period: "2019 - 2020",
       title: "Full Stack Developer",
-      company: "Siemens",
+      company: "SupraTix GmbH",
       location: "Germany",
       highlights: [
         "Front and Back End development in various projects",
